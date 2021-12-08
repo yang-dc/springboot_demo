@@ -1,6 +1,5 @@
 package com.test.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.test.dao.mapper.UserMapper;
 import com.test.dao.vo.User;
 import com.test.service.UserService;
@@ -18,8 +17,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Result queryUserAll() {
-        QueryWrapper<User> wrapper = new QueryWrapper<>();
-        List<User> users = userMapper.selectList(wrapper);
+//        QueryWrapper<User> wrapper = new QueryWrapper<>();
+//        List<User> users = userMapper.selectList(wrapper);
+        List<User> users = userMapper.queryUserAll();
         return Result.success(users);
     }
 }
