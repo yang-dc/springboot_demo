@@ -1,0 +1,89 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.xckj:demp:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.projectlombok:lombok:jar -> version 1.18.12 vs (?) @ line 78, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ---------------------------< com.xckj:demp >----------------------------
+[INFO] Building demp 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.7.18:run (default-cli) > test-compile @ demp >>>
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ demp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.10.1:compile (default-compile) @ demp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ demp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /workspaces/springboot_demo/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.10.1:testCompile (default-testCompile) @ demp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.7.18:run (default-cli) < test-compile @ demp <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.7.18:run (default-cli) @ demp ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.18)
+
+2026-11-24 05:45:26.239  INFO 33197 --- [           main] com.test.DempApplication                 : Starting DempApplication using Java 1.8.0_514 on codespaces-302c9d with PID 33197 (/workspaces/springboot_demo/target/classes started by codespace in /workspaces/springboot_demo)
+2026-11-24 05:45:26.241  INFO 33197 --- [           main] com.test.DempApplication                 : No active profile set, falling back to 1 default profile: "default"
+2026-11-24 05:45:27.257  INFO 33197 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2026-11-24 05:45:27.264  INFO 33197 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-24 05:45:27.264  INFO 33197 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-11-24 05:45:27.319  INFO 33197 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-24 05:45:27.320  INFO 33197 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 988 ms
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Initialization Sequence datacenterId:0 workerId:31
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.5 
+Can not find table primary key in Class: "com.test.dao.vo.User".
+2026-11-24 05:45:27.531  WARN 33197 --- [           main] c.b.m.core.injector.DefaultSqlInjector   : class com.test.dao.vo.User ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-11-24 05:45:27.853  INFO 33197 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2026-11-24 05:45:27.864  INFO 33197 --- [           main] com.test.DempApplication                 : Started DempApplication in 2.08 seconds (JVM running for 2.574)
+2026-11-24 05:45:46.363  INFO 33197 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-24 05:45:46.364  INFO 33197 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-24 05:45:46.366  INFO 33197 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ace747] was not registered for synchronization because synchronization is not active
+2026-11-24 05:45:46.527  INFO 33197 --- [nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-24 05:45:46.529  WARN 33197 --- [nio-8082-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2026-11-24 05:45:46.863  INFO 33197 --- [nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@1817432822 wrapping com.mysql.cj.jdbc.ConnectionImpl@426f98dc] will not be managed by Spring
+==>  Preparing: SELECT userName,passWord,url FROM user_info
+==> Parameters: 
+<==      Total: 0
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15ace747]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d837344] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1396999812 wrapping com.mysql.cj.jdbc.ConnectionImpl@426f98dc] will not be managed by Spring
+==>  Preparing: SELECT userName,passWord,url FROM user_info
+==> Parameters: 
+<==    Columns: userName, passWord, url
+<==        Row: , 123123, 123123123213
+<==        Row: , 123213, 1231231
+<==      Total: 2
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d837344]

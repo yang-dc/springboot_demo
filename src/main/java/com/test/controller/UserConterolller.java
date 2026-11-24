@@ -22,4 +22,8 @@ public class UserConterolller {
     public Result queryGroupList() {
         return Result.success(null);
     }
+     @GetMapping("/demo")
+    public Result demo() {
+        return Result.success("success");
+    }
 }

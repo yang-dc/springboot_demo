@@ -1,21 +1,13 @@
 {
   "name": "Java 8 Spring Boot Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/java:1-8-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
-      "version": "none",
-      "installMaven": "false",
-      "installGradle": "false"
+      "version": "8",
+      "jdkDistro": "tem",
+      "installMaven": true,
+      "installGradle": false
     },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-  "forwardPorts": [8082],
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "vscjava.vscode-java-pack",
-        "redhat.vscode-yaml"
-      ]
-    }
-  }
+  "forwardPorts": [8082]
 }
