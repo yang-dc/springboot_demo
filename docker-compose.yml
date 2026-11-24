@@ -1,0 +1,20 @@
+services: 
+ mysql: 
+  image: mysql:8.0
+  container_name: demo-mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_DATABSE: user
+  ports:
+    - "3306:3306"
+  volumes:
+    - mysql-data:/var/lib/mysql
+  healthcheck:
+   test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
+   interval: 5s
+   timeout: 3s
+   retries: 10
+
+volumes: 
+  mysql-data:
+
