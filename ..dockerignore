@@ -1,0 +1,9 @@
+.git/
+.gitignore
+*.log
+app.log
+.mvn/
+README.md
+docker/
+target/*
+!target/*.jar

@@ -87,3 +87,5 @@ JDBC Connection [HikariProxyConnection@1396999812 wrapping com.mysql.cj.jdbc.Con
 <==        Row: , 123213, 1231231
 <==      Total: 2
 Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d837344]
+2026-11-24 06:10:29.650  INFO 33197 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-24 06:10:29.686  INFO 33197 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
